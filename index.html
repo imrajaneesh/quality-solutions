@@ -12,32 +12,48 @@
 
   <!-- Links -->
   <link rel="stylesheet" href="Assets/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <title>Hello, world!</title>
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Quality Solutions</title>
 </head>
 
 <body>
 
   <header id="header">
     <div class="logo">
-      <img src="assets/img/logo.png" alt="">
+      <img src="assets/img/logo.png" alt="Logo">
     </div>
     <nav id="navbar">
       <a href="#section1">Home</a>
       <a href="#section2">About</a>
       <a href="#section3">Services & Solutions</a>
       <a href="#section4">Capabilities</a>
-      <a href="#section4">Career</a>
-      <a href="#section4">Contact</a>
+      <a href="#section5">Career</a>
+      <a href="#section6">Contact</a>
     </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
+
 
   <section class="banner">
     <video autoplay muted loop class="background-video">
       <source src="assets/video/banner-video.mp4" type="video/mp4">
     </video>
     <div class="banner-overlay"></div>
-    <div class="banner-overlay-content">
+    <div class="banner-overlay-content" data-aos="zoom-out-down" data-aos-duration="2000">
       <h4>Quality Solutions</h4>
       <h1>Best Solution For <br><span class="underline">the Innovations</span></h1>
     </div>
@@ -48,30 +64,34 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <button>About us</button>
-          <h2>We Deliver Result through innovation</h2>
-          <p class="ps1">Quality Solutions Company was founded in 2016 to run call centers and recruit qualified people
+          <button class="button-1">About us</button>
+          <h2 class="mt-3" data-aos="fade-up" data-aos-duration="1000">We deliver Results <br> through innovation</h2>
+          <p class="ps1" data-aos="fade-up" data-aos-duration="2000">Quality Solutions Company was founded in 2016 to
+            run call centers and recruit qualified people
             based on the long experience of its members and its employees in the field.</p>
-          <p>We are experts in creating and implementing straightforward and practical solutions to improve
+          <p data-aos="fade-up" data-aos-duration="3000">We are experts in creating and implementing straightforward and
+            practical solutions to improve
             your operational performance. We believe that effective operations are the key to delivering an
             exceptional customer experience.</p>
-          <div class="image-container">
+          <div class="image-container" data-aos="fade-in" data-aos-duration="2000">
             <img src="assets/img/index-about-img.png" alt="About Us">
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 d-flex align-items-end">
           <div class="index-about-content">
-            <div class="vission content-box">
+            <div class="vission content-box" data-aos="zoom-out-down" data-aos-duration="2000">
+              <img src="assets/img/banner-icon-1.png" alt="">
               <h4>vission</h4>
               <p>We deliver results through innovation, and an integrated system for quality of services.</p>
             </div>
-            <div class="mission content-box">
+            <div class="mission content-box" data-aos="zoom-out-down" data-aos-duration="3000">
+              <img src="assets/img/banner-icon-2.png" alt="">
               <h4>Mission</h4>
               <p>Creating dynamic partnerships with the government and private sectors, leading a quantum leap
                 for our clients and contributing to the development of their investments through the operation of
                 their businesses through providing innovative solutions with our high-level call center services.</p>
             </div>
-            <button>view More</button>
+            <button class="button-2">view More</button>
           </div>
         </div>
       </div>
@@ -84,82 +104,41 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <button>About us</button>
-          <h2>We are provoding high valued services to the customer</h2>
-          <p class="ps1">We create a structured process for managing communication with clients properly to ensure rabid
+          <button class="button-1">Services</button>
+          <h2 data-aos="fade-in" data-aos-duration="1000">We are provoding high valued services to the customer</h2>
+          <p class="ps1" data-aos="fade-in" data-aos-duration="2000">We create a structured process for managing communication with clients properly to ensure rabid
             follow-up to their inquiries</p>
         </div>
+
         <div class="index-service-item">
 
 
-          <section id="dual-slider-section">
-            <div class="slider-container top-slider">
-              <!-- First Slider -->
-              <div class="slider">
-                <div class="slide">
-                  <div class="slide-content">
-                    <img src="assets/images/image1.jpg" alt="Image 1">
-                    <div class="overlay-text">Text 1</div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="slide-content">
-                    <img src="assets/images/image2.jpg" alt="Image 2">
-                    <div class="overlay-text">Text 2</div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="slide-content">
-                    <img src="assets/images/image3.jpg" alt="Image 3">
-                    <div class="overlay-text">Text 3</div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="slide-content">
-                    <img src="assets/images/image4.jpg" alt="Image 4">
-                    <div class="overlay-text">Text 4</div>
-                  </div>
-                </div>
-              </div>
+          <div class="service-slider">
+            <div class="slider-item">
+              <img src="assets/img/index-about-img.png" alt="About Us">
+              <div class="overlay-text">text 1</div>
             </div>
-
-            <div class="slider-container bottom-slider">
-              <!-- Second Slider -->
-              <div class="slider">
-                <div class="slide">
-                  <div class="slide-content">
-                    <img src="assets/images/image5.jpg" alt="Image 5">
-                    <div class="overlay-text">Text 5</div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="slide-content">
-                    <img src="assets/images/image6.jpg" alt="Image 6">
-                    <div class="overlay-text">Text 6</div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="slide-content">
-                    <img src="assets/images/image7.jpg" alt="Image 7">
-                    <div class="overlay-text">Text 7</div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="slide-content">
-                    <img src="assets/images/image8.jpg" alt="Image 8">
-                    <div class="overlay-text">Text 8</div>
-                  </div>
-                </div>
-              </div>
+            <div class="slider-item">
+              <img src="assets/img/index-about-img.png" alt="About Us">
+              <div class="overlay-text">text 1</div>
             </div>
-
-            <!-- Navigation Arrows -->
-            <div class="slider-navigation">
-              <button class="slider-button prev-button">❮</button>
-              <button class="slider-button next-button">❯</button>
+            <div class="slider-item">
+              <img src="assets/img/index-about-img.png" alt="About Us">
+              <div class="overlay-text">text 1</div>
             </div>
-          </section>
-
+            <div class="slider-item">
+              <img src="assets/img/index-about-img.png" alt="About Us">
+              <div class="overlay-text">text 1</div>
+            </div>
+            <div class="slider-item">
+              <img src="assets/img/index-about-img.png" alt="About Us">
+              <div class="overlay-text">text 1</div>
+            </div>
+            <div class="slider-item">
+              <img src="assets/img/index-about-img.png" alt="About Us">
+              <div class="overlay-text">text 1</div>
+            </div>
+          </div>
 
 
         </div>
@@ -178,35 +157,35 @@
           </div>
 
           <h2 class="p-2 text-white">We Deliver Result through innovation</h2>
-          <div class="d-flex">
+          <div class="d-flex" data-aos="fade-in" data-aos-duration="2000">
             <p class="ps1 p-2">Quality solutions company enhance the customer's experience by providing highquality
               innovative solutions that are
               trailored to the needs of our customers.</p>
-            <button>view More</button>
+            <button class="button-2">view More</button>
           </div>
 
         </div>
-        <div class="col-md-6">
-          <div class="index-about-content">
-            <div class="index-content-item">
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="index-about-content d-grid gap-3">
+            <div class="index-content-item" data-aos="fade-up" data-aos-duration="1000">
               <img src="assets/img/icon-1.png" alt="">
-              <div class="content-item-index">
+              <div class="content-item-index p-2">
                 <h4>Business Process Outsoursing (BPO)</h4>
                 <p>By offering comprehensive outsourced end-to-end IT services, operational and maintenance, staffing
                   services</p>
               </div>
             </div>
-            <div class="index-content-item">
+            <div class="index-content-item" data-aos="fade-up" data-aos-duration="2000">
               <img src="assets/img/icon-2.png" alt="">
-              <div class="content-item-index">
+              <div class="content-item-index p-2">
                 <h4>Manpower</h4>
                 <p>We equip your contact center with qualified, trained employes. We also provide on job training.
                 </p>
               </div>
             </div>
-            <div class="index-content-item">
+            <div class="index-content-item" data-aos="fade-up" data-aos-duration="3000">
               <img src="assets/img/icon-3.png" alt="">
-              <div class="content-item-index">
+              <div class="content-item-index p-2">
                 <h4>Consulting Services</h4>
                 <p>We have a multi-disciplinary consultation approach which provides clients with the confidence they
                   need to push ahead with theit business plans.</p>
@@ -220,13 +199,90 @@
 
 
   <section id="index-clients" class="index-clients">
-    <div class="index-client-main">
-      <img src="" alt="">
+    <div class="parallax">
+      <div class="parallax-content">
+        <div>
+          <h1>Welcome to My Website</h1>
+          <p>This is an example of a parallax effect.</p>
+        </div>
+      </div>
+    </div>
+    <div class="client-section">
+      <div class="row">
+        <div class="col">
+          <img src="assets/img/image 6.png" alt="">
+        </div>
+        <div class="col">
+          <img src="assets/img/image 6.png" alt="">
+        </div>
+        <div class="col">
+          <img src="assets/img/image 6.png" alt="">
+        </div>
+        <div class="col">
+          <img src="assets/img/image 6.png" alt="">
+        </div>
+        <div class="col">
+          <img src="assets/img/image 6.png" alt="">
+        </div>
+      </div>
     </div>
   </section>
 
 
-  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <section class="pt-2">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="logo">
+              <img src="assets/img/logo.png" alt="Logo">
+            </div>
+
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-white fw-bold mb-4">Conect</h6>
+            <p><i class="bi bi-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-white fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">About</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Services</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- Footer -->
+
+
+  <!-- slick slider -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -234,6 +290,7 @@
     crossorigin="anonymous"></script>
 
   <!--Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/script.js"></script>
 
 </body>

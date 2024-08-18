@@ -1,54 +1,61 @@
-let timeoutId;
 
-window.addEventListener('scroll', () => {
-    const header = document.getElementById('header');
-    const bannerHeight = document.querySelector('.banner').offsetHeight;
+// Aos Animation Link
 
-    if (timeoutId) {
-        clearTimeout(timeoutId); // Clear any existing timeout
+AOS.init();
+
+// Navbar Button Collapse
+
+document.getElementById('hamburger').addEventListener('click', function () {
+    document.getElementById('navbar').classList.toggle('active');
+});
+
+// header navbar scroll delay
+
+const myDiv = document.querySelector('#header');
+
+function checkScroll() {
+    if (window.scrollY > 100) {
+        myDiv.classList.add('scrolled');
+    } else {
+        myDiv.classList.remove('scrolled');
     }
-
-    timeoutId = setTimeout(() => {
-        if (window.scrollY > bannerHeight) {
-            header.style.backgroundColor = '#333'; // Change to the desired background color
-        } else {
-            header.style.backgroundColor = 'transparent';
-        }
-    }, 10); // Delay in milliseconds (e.g., 200ms)
-});
-
-
-
-
-// -----------
-
-const topSlider = document.querySelector('.top-slider .slider');
-const bottomSlider = document.querySelector('.bottom-slider .slider');
-const topSlides = topSlider.querySelectorAll('.slide');
-const bottomSlides = bottomSlider.querySelectorAll('.slide');
-const topSlideCount = topSlides.length;
-const bottomSlideCount = bottomSlides.length;
-const slidesToShow = 4; // Number of slides to show at once
-let topIndex = 0;
-let bottomIndex = 0;
-
-function updateSlider(slider, index, slideCount, direction) {
-    const slideWidth = 100 / slidesToShow; // Adjust width for visible slides
-    const offset = -index * slideWidth; // Calculate offset
-    slider.style.transform = `translateX(${offset}%)`;
-    slider.style.transitionDuration = direction === 'right' ? '0.3s' : '0.7s'; // Adjust timing
 }
+window.addEventListener('scroll', checkScroll);
 
-document.querySelector('.slider-navigation .next-button').addEventListener('click', () => {
-    topIndex = (topIndex + 1) % topSlideCount;
-    bottomIndex = (bottomIndex + 1) % bottomSlideCount;
-    updateSlider(topSlider, topIndex, topSlideCount, 'right');
-    updateSlider(bottomSlider, bottomIndex, bottomSlideCount, 'left');
-});
+// index servidouble slider
 
-document.querySelector('.slider-navigation .prev-button').addEventListener('click', () => {
-    topIndex = (topIndex - 1 + topSlideCount) % topSlideCount;
-    bottomIndex = (bottomIndex - 1 + bottomSlideCount) % bottomSlideCount;
-    updateSlider(topSlider, topIndex, topSlideCount, 'left');
-    updateSlider(bottomSlider, bottomIndex, bottomSlideCount, 'right');
-});
+$('.service-slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
