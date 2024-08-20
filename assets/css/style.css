@@ -11,6 +11,21 @@ html {
     font-family: "Poppins", sans-serif;
 }
 
+p {
+    font-size: 15px;
+    color: #333333;
+    font-family: 200;
+}
+
+li {
+    list-style: none;
+}
+
+.underline {
+    display: inline-block;
+    border-bottom: 5px solid #32A5AA;
+    padding-bottom: 5px;
+}
 
 .button-1 {
     background-color: #d5d5d5;
@@ -33,8 +48,15 @@ html {
     padding: 5px 15px 5px 15px;
 }
 
+.button-4 {
+    background-color: #ffffff;
+    color: #32A5AA;
+    border: 1px solid  #32A5AA;
+}
+
 
 /* Base Navigation and Banner Styles */
+
 header {
     position: fixed;
     width: 100%;
@@ -98,7 +120,7 @@ header.scrolled .hamburger span {
 #navbar a::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
     right: 0;
     height: 3px;
@@ -531,7 +553,7 @@ header.scrolled .hamburger span {
     left: 0;
     right: 0;
     top: 75%;
-    background: linear-gradient(180deg, rgba(79,0,140,0) 0%, rgba(79,0,140,1) 88%);
+    background: linear-gradient(180deg, rgba(79, 0, 140, 0) 0%, rgba(79, 0, 140, 1) 88%);
     color: #fff;
     padding: 0;
     text-align: center;
@@ -653,7 +675,7 @@ About page
 
 .about-values::before {
     position: absolute;
-    top: 13%;
+    top: 12%;
     content: '';
     width: 100%;
     height: 200px;
@@ -664,7 +686,7 @@ About page
 
 .about-values .value-boxes {
     background-color: #fff;
-    border: solid 1px  #e6e6e6;
+    border: solid 1px #e6e6e6;
     padding: 20px;
     margin-bottom: 10px;
     height: auto;
@@ -709,14 +731,253 @@ About page
     z-index: -1;
 }
 
+.about-fact ul {
+    margin: 0;
+    padding: 0;
+}
+
 .about-fact li {
-    list-style: none;
     padding-bottom: 10px;
     display: flex;
 }
 
 .about-fact i {
     font-size: 20px;
+}
+
+/* ============================ 
+Service & Solutions page
+============================ */
+
+.service-hero {
+    padding: 60px 20px;
+}
+
+.service-hero img {
+    width: 100%;
+}
+
+.service-hero .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.service-hero .image-container::before {
+    content: '';
+    position: absolute;
+    left: -20%;
+    top: 90px;
+    width: 100%;
+    height: 100%;
+    background-color: #565CA6;
+    z-index: -1;
+}
+
+.service-hero li {
+    margin-bottom: 20px;
+}
+
+.service-hero .underline {
+    display: inline-block;
+    border-bottom: 5px solid #32A5AA;
+    padding-bottom: 5px;
+}
+
+/* Service Media */
+
+.service-media {
+    padding: 60px 20px;
+}
+
+.service-media .underline {
+    display: inline-block;
+    border-bottom: 5px solid #32A5AA;
+    padding-bottom: 5px;
+}
+
+.service-media ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Service Media */
+
+.service-solutions {
+    padding: 60px 20px;
+}
+
+.service-solutions ul {
+    margin: 0;
+    padding: 0;
+}
+
+.service-solutions .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.service-solutions .image-container::before {
+    content: '';
+    position: absolute;
+    right: -20%;
+    top: 90px;
+    width: 100%;
+    height: 100%;
+    background-color: #4F008C;
+    z-index: -1;
+}
+
+.service-solutions .underline {
+    display: inline-block;
+    border-bottom: 5px solid #4F008C;
+    padding-bottom: 5px;
+}
+
+/* ============================ 
+Capabilities page
+============================ */
+
+.capabilities-hero {
+    position: relative;
+    padding: 60px 20px;
+    background-image: url('../img/Background-Network.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 60em;
+    background-position-y: 8em;
+}
+
+.capabilities-hero::before {
+    position: absolute;
+    content: '';
+    background-color: #4F008C;
+    width: 10px;
+    top: 25%;
+    height: 100%;
+}
+
+.capabilities-hero img {
+    width: 100%;
+}
+
+.capabilities-hero .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.capabilities-hero .image-container::before {
+    content: '';
+    position: absolute;
+    right: -20%;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    background-color: #4F008C;
+    z-index: -1;
+}
+
+.capabilities-hero .underline {
+    display: inline-block;
+    border-bottom: 5px solid #4F008C;
+    padding-bottom: 5px;
+}
+
+.capabilities-index {
+    padding: 60px 20px;
+}
+
+
+.capabilities-index .value-boxes {
+    background-color: #fff;
+    border: solid 1px #e6e6e6;
+    padding: 20px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.underline {
+    display: inline-block;
+    border-bottom: 5px solid #32A5AA;
+    padding-bottom: 5px;
+}
+
+/* ============================ 
+Capabilities page
+============================ */
+
+.career-form {
+    padding: 60px 20px;
+    margin: auto;
+    background-image: url('../img/Background-Network.png');
+    background-size: contain;
+    
+}
+
+.career-form form {
+    background-color: #fff;
+    border: solid 1px #e6e6e6;
+    padding: 20px;
+    margin-bottom: 10px;
+    height: auto;
+
+}
+
+.career-form form label {
+    font-size: 14px;
+    color: #333333;
+}
+
+.career-form form input {
+    border-radius: 0;
+}
+
+.file-upload {
+    text-align: center;
+}
+
+.file-upload input {
+    background-image: url('../img/file-folder.png');
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-left: auto;
+}
+
+.career-form .file-upload {
+    width: 100%;
+    background-color: #fff;
+    border: solid 1px #e6e6e6;
+    padding: 20px;
+    margin: auto;
+    height: auto;
+}
+
+#drop_zone {
+    border: 5px solid blue;
+    width: 200px;
+    height: 100px;
+}
+
+.career-content {
+    padding: 60px 20px;
+}
+
+/* ============================ 
+Contact page
+============================ */
+
+.contact-index {
+    padding: 60px 20px;
+    background-image: url('../img/Background-Network.png');
+    background-position-y: bottom;
+    background-size: contain;
+}
+
+.contact-index form {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: solid 1px #e6e6e6;
 }
 
 /* ======================================= */
@@ -767,8 +1028,8 @@ About page
 }
 
 
-.client-section .client-section-img img{
-    width: 200px;
+.client-section .client-section-img img {
+    width: 260px;
     height: auto;
     object-fit: cover;
     margin: auto;
@@ -800,7 +1061,7 @@ footer p {
 
 footer h6 {
     font-family: "Poppins", sans-serif;
-    
+
 }
 
 footer a {
