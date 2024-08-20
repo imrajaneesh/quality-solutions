@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body,
 html {
@@ -24,7 +27,7 @@ html {
 }
 
 .button-3 {
-    background-color: #565CA6;
+    background-color: #4F008C;
     color: #fff;
     border: none;
     padding: 5px 15px 5px 15px;
@@ -446,7 +449,7 @@ header.scrolled .hamburger span {
 .index-services h2 {
     font-size: 2em;
     font-weight: 600;
-    color: #565CA6;
+    color: #4F008C;
 }
 
 .index-services .ps1 {
@@ -461,12 +464,13 @@ header.scrolled .hamburger span {
 .index-service-item::before {
     content: '';
     position: absolute;
-    background-color: #565CA6;
+    background-color: #4F008C;
     right: 0;
     top: -20%;
     width: 200px;
     height: 130%;
 }
+
 
 @media only screen and (max-width: 767px) {
     .index-service-item::before {
@@ -514,6 +518,8 @@ header.scrolled .hamburger span {
 
 .slider-item img {
     width: 90%;
+    height: 250px !important;
+    object-fit: cover;
     height: auto;
     display: block;
 }
@@ -525,12 +531,12 @@ header.scrolled .hamburger span {
     left: 0;
     right: 0;
     top: 75%;
-    background: linear-gradient(0deg, rgba(73, 82, 186, 1) 0%, rgba(86, 92, 166, 0) 100%);
+    background: linear-gradient(180deg, rgba(79,0,140,0) 0%, rgba(79,0,140,1) 88%);
     color: #fff;
-    padding: 10px;
+    padding: 0;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: opacity 0.3s ease, top 0.3s ease;
 }
 
@@ -755,9 +761,19 @@ About page
 .client-section {
     position: absolute;
     width: 100%;
-    bottom: -35px;
+    bottom: 70px;
+    cursor: url('/assets/img/cursor.png'), auto;
 
 }
+
+
+.client-section .client-section-img img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+}
+
 
 .client-section img {
     width: 100%;
@@ -776,11 +792,35 @@ footer {
 }
 
 footer p {
+    font-family: "Poppins", sans-serif;
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 200;
 }
 
-html {
-    scroll-behavior: smooth;
+footer h6 {
+    font-family: "Poppins", sans-serif;
+    
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer i {
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .copyright {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+
+}
+
+footer .copyright p {
+    color: #26262E;
+    padding: 10px;
+    font-weight: 300;
 }

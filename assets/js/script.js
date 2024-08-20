@@ -1,7 +1,9 @@
 
 // Aos Animation Link
 
-AOS.init();
+AOS.init({
+  startEvent: 'load',
+});
 
 // Navbar Button Collapse
 
@@ -101,4 +103,57 @@ $(document).ready(function(){
     $('.top-slider').slick('slickNext');
     $('.bottom-slider').slick('slickNext');
   });
+});
+
+
+
+// Scroll Speed
+
+  document.addEventListener('wheel', function(event) {
+      let section = document.querySelector('.index-service-item, .slider-section');
+
+      if (section && section.contains(event.target)) {
+          event.preventDefault();
+          let scrollSpeed = 0.5; 
+          window.scrollBy({
+              top: event.deltaY * scrollSpeed,
+              behavior: 'smooth'
+          });
+      }
+  });
+
+
+// Client Slider
+
+$('.client-section').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
