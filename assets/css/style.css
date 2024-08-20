@@ -51,7 +51,7 @@ li {
 .button-4 {
     background-color: #ffffff;
     color: #32A5AA;
-    border: 1px solid  #32A5AA;
+    border: 1px solid #32A5AA;
 }
 
 
@@ -783,6 +783,18 @@ Service & Solutions page
     padding-bottom: 5px;
 }
 
+@media only screen and (max-width: 767px) {
+    .service-hero {
+        margin: 0;
+        padding: 0;
+    }
+
+    .service-hero ul {
+        margin-top: 90px;
+        padding: 0;
+    }
+}
+
 /* Service Media */
 
 .service-media {
@@ -804,6 +816,11 @@ Service & Solutions page
 
 .service-solutions {
     padding: 60px 20px;
+    overflow-x: hidden;
+}
+
+.service-solutions img {
+    width: 100%;
 }
 
 .service-solutions ul {
@@ -831,6 +848,18 @@ Service & Solutions page
     display: inline-block;
     border-bottom: 5px solid #4F008C;
     padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .service-solutions {
+        margin: 0;
+        padding: 0;
+    }
+
+    .service-solutions ul {
+        margin-top: 90px;
+        padding: 0;
+    }
 }
 
 /* ============================ 
@@ -901,6 +930,13 @@ Capabilities page
     padding-bottom: 5px;
 }
 
+@media only screen and (max-width: 767px) {
+
+    .capabilities-hero .image-container::before {
+        right: 0;
+    }
+}
+
 /* ============================ 
 Capabilities page
 ============================ */
@@ -910,7 +946,7 @@ Capabilities page
     margin: auto;
     background-image: url('../img/Background-Network.png');
     background-size: contain;
-    
+
 }
 
 .career-form form {
@@ -959,6 +995,13 @@ Capabilities page
 
 .career-content {
     padding: 60px 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .career-content {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /* ============================ 
