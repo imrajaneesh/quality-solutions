@@ -5,10 +5,24 @@ AOS.init({
   startEvent: 'load',
 });
 
+// spinner
+
+// Prevent scrolling by default
+document.documentElement.classList.add('no-scroll');
+
+$(window).on('load', function () {
+  setTimeout(function () { // Allowing 3 secs to fade out loader
+    $('.page-loader').fadeOut('slow', function () {
+      // Remove class from body to enable scrolling
+      $('html').removeClass('no-scroll');
+    });
+  }, 1000);
+});
+
 // Navbar Button Collapse
 
 document.getElementById('hamburger').addEventListener('click', function () {
-    document.getElementById('navbar').classList.toggle('active');
+  document.getElementById('navbar').classList.toggle('active');
 });
 
 // header navbar scroll delay
@@ -16,17 +30,17 @@ document.getElementById('hamburger').addEventListener('click', function () {
 const myDiv = document.querySelector('#header');
 
 function checkScroll() {
-    if (window.scrollY > 100) {
-        myDiv.classList.add('scrolled');
-    } else {
-        myDiv.classList.remove('scrolled');
-    }
+  if (window.scrollY > 100) {
+    myDiv.classList.add('scrolled');
+  } else {
+    myDiv.classList.remove('scrolled');
+  }
 }
 window.addEventListener('scroll', checkScroll);
 
 // index servidouble slider
 
-$(document).ready(function(){
+$(document).ready(function () {
   // Initialize the top slider
   $('.top-slider').slick({
     dots: true,
@@ -94,12 +108,12 @@ $(document).ready(function(){
   });
 
   // Control both sliders with the same buttons
-  $('.prev-slide').on('click', function(){
+  $('.prev-slide').on('click', function () {
     $('.top-slider').slick('slickPrev');
     $('.bottom-slider').slick('slickPrev');
   });
 
-  $('.next-slide').on('click', function(){
+  $('.next-slide').on('click', function () {
     $('.top-slider').slick('slickNext');
     $('.bottom-slider').slick('slickNext');
   });
@@ -109,18 +123,18 @@ $(document).ready(function(){
 
 // Scroll Speed
 
-  document.addEventListener('wheel', function(event) {
-      let section = document.querySelector('.index-service-item, .slider-section');
+document.addEventListener('wheel', function (event) {
+  let section = document.querySelector('.index-service-item, .slider-section');
 
-      if (section && section.contains(event.target)) {
-          event.preventDefault();
-          let scrollSpeed = 0.5; 
-          window.scrollBy({
-              top: event.deltaY * scrollSpeed,
-              behavior: 'smooth'
-          });
-      }
-  });
+  if (section && section.contains(event.target)) {
+    event.preventDefault();
+    let scrollSpeed = 0.5;
+    window.scrollBy({
+      top: event.deltaY * scrollSpeed,
+      behavior: 'smooth'
+    });
+  }
+});
 
 
 // Client Slider
