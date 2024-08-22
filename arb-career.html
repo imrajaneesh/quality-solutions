@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="assets/css/arab-style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Quality Solutions</title>
+</head>
+
+<body>
+
+    <!-- PAGE LOADER-->
+
+    <div class="page-loader">
+        <div class="spinner-wrapper">
+            <div class="spinner"></div>
+        </div>
+        <img src="assets/img/logo-single.png" alt="Logo">
+    </div>
+
+    <!-- Top Navigation Section -->
+
+    <header id="header">
+      <div class="logo">
+        <a href="arb-index.html"> <img src="assets/img/logo.png" alt="Logo"></a>
+      </div>
+      <nav id="navbar">
+        <a href="arb-contact.html">اتصال</a>
+        <a href="arb-career.html" class="active">حياة مهنية</a>
+        <a href="arb-capabilities.html">القدرات</a>
+        <a href="arb-services.html">الخدمات والحلول</a>
+        <a href="arb-about.html">عن</a>
+        <a href="arb-index.html">بيت</a>
+  
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            أرب
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="career.html">Eng</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+    </header>
+  
+    <section class="inner-banner">
+        <img src="assets/img/CareersBanner-IMG.png" alt="About banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-overlay-content" data-aos="zoom-out-down" data-aos-duration="2000">
+            <h4>حلول الجودة</h4>
+            <h1><span class="underline">حياة مهنية</span></h1>
+        </div>
+    </section>
+
+    <!--========== Career page Content ============-->
+
+    <section class="career-form">
+        <div class="container">
+
+            <form>
+                <div class="row">
+                  <div class="col mb-3 mt-2">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="Lname" class="form-control" id="exampleFormControlInput1" placeholder="اسم العائلة">
+                </div>
+                  <div class="col mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">الاسم الكامل</label>
+                    <input type="Fname" class="form-control" id="exampleFormControlInput1" placeholder="الاسم الأول">
+                </div>
+            </div>
+            <div class="row">
+              <div class="col mb-3 mt-2">
+                <label for="exampleFormControlInput1" class="form-label">هاتف</label>
+                <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="أدخل رقم هاتفك">
+            </div>
+                <div class="col mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">بريد إلكتروني</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="أدخل بريدك الإلكتروني">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">عنوان البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="عنوان البريد الإلكتروني">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">الوظيفة التي يتم التقدم لها</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="أضف منصبك الوظيفي">
+            </div>
+
+            <div class="col mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">غطاء الرسالة</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="أضف النص الخاص بك هنا"></textarea>
+            </div>
+
+                <div class="file-upload">
+                    <form action="/action_page.php">
+                        <img src="assets/img/file-folder.png" alt="">
+                        <p class="text-center">أسقط الملفات هنا أو تصفح</p>
+                        <input type="file" id="myFile" name="filename">
+                        <p>الحد الأقصى لحجم الملف 4 ميجابايت (pdf، docx، png)</p>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <div class="d-flex">
+                        <button class="button-4 m-1">يلغي</button>
+                        <button class="button-2 m-1">يُقدِّم</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="career-content">
+        <div class="container">
+            <ul>
+                <li data-aos="fade-up" data-aos-duration="1000">
+                    <h5 class="underline">بيئة عمل ذكية</h5>
+                    <p>بمعايير عالمية عالية، نوفر بيئة عمل ديناميكية تساعد موظفينا على التطور
+                        المهارات التي يحتاجونها للنجاح من خلال التدريب أثناء العمل، وهذا من شأنه أن يساعد في تعزيز قدرات عملائنا
+                        خبرة.
+                    </p>
+                </li>
+                <li data-aos="fade-up" data-aos-duration="1000">
+                    <h5 class="underline">الدورات التدريبية المتخصصة</h5>
+                    <p>وتشمل هذه الدورات التدريبية وبنوك المعرفة الذكية والقاعات الداخلية والعصف الذهني
+                        المناقشات.
+                    </p>
+                </li>
+                <li data-aos="fade-up" data-aos-duration="1000">
+                    <h5 class="underline">فرص وظيفية متعددة</h5>
+                    <p>لدينا في شركة حلول الجودة مجموعة واسعة من فرص العمل للموظفين المحتملين.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--========== Career page Content End ============-->
+
+     <!-- Index Clients Section -->
+
+  <section id="index-clients" class="index-clients">
+    <div class="parallax">
+      <div class="parallax-content">
+        <div>
+          <h4>نحن نحل التحديات مع</h4>
+          <h2>التقنيات المتقدمة و<br> مجموعة متنوعة من الحلول المبتكرة</h2>
+        </div>
+      </div>
+    </div>
+    <div class="client-section">
+      <div class="client-section-img">
+        <img src="assets/img/client-1.png" alt="">
+      </div>
+      <div class="client-section-img">
+        <img src="assets/img/client-2.png" alt="">
+      </div>
+      <div class="client-section-img">
+        <img src="assets/img/client-3.png" alt="">
+      </div>
+      <div class="client-section-img">
+        <img src="assets/img/client-4.png" alt="">
+      </div>
+      <div class="client-section-img">
+        <img src="assets/img/client-5.png" alt="">
+      </div>
+      <div class="client-section-img">
+        <img src="assets/img/client-1.png" alt="">
+      </div>
+      <div class="client-section-img">
+        <img src="assets/img/client-2.png" alt="">
+      </div>
+      <div class="client-section-img">
+        <img src="assets/img/client-3.png" alt="">
+      </div>
+      <div class="client-section-img">
+        <img src="assets/img/client-4.png" alt="">
+      </div>
+      <div class="client-section-img">
+        <img src="assets/img/client-5.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <section class="pt-2">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+            <h6 class="text-uppercase text-white fw-bold mt-5">
+
+            </h6>
+            <p>
+              <a href="career.html" class="text-reset">وظائف</a>
+            </p>
+            <p>
+              <a href="services.html" class="text-reset">الحلول</a>
+            </p>
+            <p>
+              <a href="capabilities.html" class="text-reset">القدرات</a>
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-white fw-bold mb-4">
+              روابط سريعة
+            </h6>
+            <p>
+              <a href="index.html" class="text-reset">بيت</a>
+            </p>
+            <p>
+              <a href="about.html" class="text-reset">عن</a>
+            </p>
+            <p>
+              <a href="services.html" class="text-reset">خدمات</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase text-white fw-bold mb-4">يتصل</h6>
+            <p class="d-flex"> طريق الملك عبد الله، طريق الملك فيصل، الرياض 14232،
+              الرياض 11655<i class="bi bi-geo-alt p-1"></i></p>
+            <p class="d-flex align-items-center">+92 51 8897313<i class="bi bi-telephone p-1"></i> </p>
+            <p class="d-flex align-items-center">info@qualitysolutions.com<i class="bi bi-envelope p-1"></i></p>
+          </div>
+          <div class="col-md-2 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="logo">
+              <img src="assets/img/logo.png" alt="Logo">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="copyright">
+      <div class="container d-flex align-items-center justify-content-between">
+        <p><a href="#"></a>الشروط والأحكام</p>
+        <p>الشروط والأحكام | سياسة الخصوصية</p>
+      </div>
+    </section>
+
+  </footer>
+  
+  <!-- Footer -->
+
+
+    <!-- slick slider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
