@@ -274,7 +274,6 @@ header.scrolled .hamburger span {
         margin: 10px 0;
         padding: 10px 20px;
         width: 100%;
-        color: #fff !important;
     }
 
     .hamburger {
@@ -282,7 +281,7 @@ header.scrolled .hamburger span {
     }
 }
 
-header .dropdown a{
+header .dropdown .dropdown-item{
     color: #201e1e !important;
 }
 
@@ -1210,6 +1209,7 @@ Contact page
 
 
 .client-section {
+    background-color: #00000000;
     position: absolute;
     width: 100%;
     bottom: 70px;
@@ -1217,12 +1217,15 @@ Contact page
 
 }
 
+.client-section .client-section-img{
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+}
 
 .client-section .client-section-img img {
-    width: 200px;
-    height: auto;
-    object-fit: cover;
-    margin: auto;
+    height: 100%;
+    width: auto;
 }
 
 
